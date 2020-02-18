@@ -29,18 +29,19 @@
 	</dependencies>
 
 	<build>
-		<finalName>loop</finalName>
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-jar-plugin</artifactId>
-			<configuration>
-				<archive>
-					<manifest>
-						<mainClass>com.example.simple_loop.App</mainClass>
-					</manifest>
-				</archive>
-			</configuration>
-		</plugin>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.0</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>com.example.simple_loop.App</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
-
 </project>
