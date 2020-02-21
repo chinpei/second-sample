@@ -18,6 +18,10 @@ public class App {
 		Locale locale = Locale.getDefault();
 		DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 		System.out.println(df.format(LocalDateTime.now()) + ", " + locale + "");
+		System.out.println("========== [env start] ==========");
+		System.getenv().entrySet().forEach(System.out::println);
+		System.out.println("========== [env end] ==========");
+		
 		
 		int count = 0;
 		while (true) {
