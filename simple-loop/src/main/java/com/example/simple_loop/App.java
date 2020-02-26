@@ -26,14 +26,14 @@ public class App {
 		System.out.println("========== [env start] ==========");
 		System.getenv().entrySet().forEach(System.out::println);
 		System.out.println("========== [env end] ==========");
-
-//		int count = 0;
-//		while (true) {
-//			Thread.sleep(3000);
-//			System.out.println(df.format(LocalDateTime.now()) + ",(" + (++count) + ")");
-//		}
 		startReceiver();
 		startSender();
+
+		int count = 0;
+		while (true) {
+			Thread.sleep(3000);
+			System.out.println(df.format(LocalDateTime.now()) + ",(" + (++count) + ")");
+		}
 	}
 
 	static void startSender() {
