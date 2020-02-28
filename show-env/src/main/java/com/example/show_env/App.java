@@ -7,10 +7,11 @@ import java.util.TreeMap;
  *
  */
 public class App {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		System.out.println("========== [env start] ==========");
 		(new TreeMap<>(System.getenv())).entrySet().forEach(System.out::println);
 		System.out.println("========== [env end] ==========");
 
+		Thread.currentThread().join();
 	}
 }
