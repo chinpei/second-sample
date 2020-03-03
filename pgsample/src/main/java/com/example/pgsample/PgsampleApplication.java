@@ -36,7 +36,7 @@ public class PgsampleApplication {
 //		String url = "jdbc:postgresql://localhost:5432/postgres";
 		String host = System.getenv("POSTGRESQL02_SERVICE_HOST");
 		String port = System.getenv("POSTGRESQL02_SERVICE_PORT");
-		String url = "jdbc:postgresql://" + host + ":" + port + "/postgres";
+		String url = "jdbc:postgresql://" + host + ":" + port + "/db01";
 		return new SingleConnectionDataSource(url, "pguser", "pgpass", true);
 	}
 	
